@@ -3,7 +3,8 @@
 Bu proje, GStreamer kütüphanesi kullanılarak hazırlanmış C++ örnek uygulamalarını içermektedir.
 Amaç; medya oynatma, kamera görüntüsü yakalama, gerçek zamanlı yayın yapma (multicast/unicast) gibi temel senaryoları göstermektir.
 
-📂 İçerik
+📂 İçerik:
+
 Video Oynatma (playbin)
 Yerel dosyadan video oynatmayı gösterir.
 sintel_trailer-480p.webm örnek dosyası üzerinden çalışır.
@@ -17,7 +18,8 @@ Kameradan alınan görüntüyü H.264 formatına sıkıştırır.
 Hem multicast (239.255.42.42:5000) hem unicast (127.0.0.1:5001) olarak yayınlar.
 Aynı anda ekranda da görüntüyü gösterir.
 
-🚀 Kullanım
+🚀 Kullanım:
+
 GStreamer kurulumunun yapılmış olması gerekir.
 
 🇬🇧 English Project Description:
@@ -25,7 +27,8 @@ GStreamer kurulumunun yapılmış olması gerekir.
 This project contains C++ example applications developed using the GStreamer library.
 The goal is to demonstrate fundamental scenarios such as media playback, capturing camera input, and real-time streaming (multicast/unicast).
 
-📂 Contents
+📂 Contents:
+
 Video Playback (playbin)
 Demonstrates playing a local video file.
 Uses the sintel_trailer-480p.webm sample file.
@@ -39,5 +42,6 @@ Captures video from the camera and encodes it into H.264 format.
 Streams simultaneously via multicast (239.255.42.42:5000) and unicast (127.0.0.1:5001).
 Also displays the video locally on the screen.
 
-🚀 Usage
+🚀 Usage:
+
 Requires a working installation of GStreame
