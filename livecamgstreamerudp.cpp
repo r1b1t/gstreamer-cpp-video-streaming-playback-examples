@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
    */
 
     /*
-    tee name=t : akışı ikiye böler, bu sayede hem yayınlayıp hemde ne yayınladığımızı görebiliriz
+    tee name=t : akışı ikiye böler, bu sayede hem yayınlayıp hemde ne yayınladığımızı göre  liriz
     udpsink host=239.255.42.42 port=5000 auto-multicast=true;
     host=239.255.42.42 → multicast adresi.
     port=5000 → multicast portu
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     pipeline = gst_parse_launch(
         "ksvideosrc ! videoconvert ! tee name=t "
         "t. ! queue ! x264enc tune=zerolatency bitrate=800 speed-preset=ultrafast ! rtph264pay pt=96 ! udpsink host=239.255.42.42 port=5000 auto-multicast=true " // multicast yayını
-        "t. ! queue ! x264enc tune=zerolatency bitrate=800 speed-preset=ultrafast ! rtph264pay pt=97 ! udpsink host=127.0.0.1 port=5001 "                         // unicast yayını
+        "t. ! queue ! x264enc tune=zerolatency bitrate=800 speed-preset=ultrafast ! rtph264pay pt=97 ! udpsink host=127.0.0.1 port=5002 "                         // unicast yayını
         "t. ! queue ! autovideosink",
         NULL);
 
